@@ -76,15 +76,19 @@ header .fa-bars{
 
 /* #region main */
 
-.demo .row{
-    flex-wrap: wrap;
-}
+
 /* /.section-demo */
 
 section.plans{
     background-color: var(--clr-primary);
 }
 /* /.section-plans */
+
+section.benefits{
+    background-color: var(--clr-primary);
+}
+
+/* /.section-benefits */
 
 /* #endregion main */
 
@@ -96,13 +100,16 @@ section.plans{
     .col-lg-6{
         width:50%;
     }
+    .col-lg-4{
+        width:calc((100% / 12) * 4);
+    } 
     
 }
 
 @media screen and (min-width: 768px){
 
-    .demo .row{
-        flex-wrap: nowrap;
+    .col-md-6{
+        width:calc(50%);
     }
     .col-md-8{
         width:calc((100% / 12) * 8);
@@ -114,8 +121,7 @@ section.plans{
 }
 
 
-
-@media screen and (max-width:768px){
+@media screen and (max-width:1119px){
     header .fa-bars{
         display: block;
     }
