@@ -27,15 +27,24 @@ ul{
 li{
     display: inline-block;
 }
+
+section{
+    padding: 1rem 0;
+}
 /* #endregion common rules */
 
 /* #region utilities */
 .d-flex{
     display: flex;
 }
-
+.col-4{
+    width:calc((100% / 12) * 4);
+}
 .col-6{
-    width:calc((100% / 12) * 6);
+    width:50%;
+}
+.col-8{
+    width:calc((100% / 12) * 8);
 }
 .col-12{
     width:100%;
@@ -64,9 +73,32 @@ header .fa-bars{
 }
 /* #endregion header */
 
+/* #region main */
+
+.demo .row{
+    flex-wrap: wrap;
+}
+/* /.section-demo */
+/* #endregion main */
 
 
 /* Responsive */
+
+@media screen and (min-width: 768px){
+
+    .demo .row{
+        flex-wrap: nowrap;
+    }
+    .col-md-8{
+        width:calc((100% / 12) * 8);
+    }
+    .col-md-4{
+        width:calc((100% / 12) * 4);
+    }
+    
+}
+
+
 
 @media screen and (max-width:768px){
     header .fa-bars{
