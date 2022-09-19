@@ -37,6 +37,9 @@ li{
 .col-6{
     width:calc((100% / 12) * 6);
 }
+.col-12{
+    width:100%;
+}
 /* #endregion utilities */
 
 /* #region debug */
@@ -47,9 +50,6 @@ li{
     height:200px;
 }
 
-.debug .container{
-    height:200px;
-}
 /* #endregion debug */
 
 /* #region header */
