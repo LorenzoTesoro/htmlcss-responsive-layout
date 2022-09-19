@@ -24,14 +24,19 @@
 ul{
     list-style: none;
 }
-li{
-    display: inline-block;
-}
 
 section{
     padding: 1rem 0;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
 /* #endregion common rules */
 
 /* #region utilities */
@@ -58,7 +63,7 @@ section{
 
 /* #region debug */
 
-.debug [class^="col-"]{
+/* .debug [class^="col-"]{
     border:1px solid black;
     background-color: lightgreen;
     height:200px;
@@ -66,18 +71,31 @@ section{
 
 .debug .cta{
     height:200px;
-}
+}  */
 /* #endregion debug */
 
 /* #region header */
 header{
     background-color: var(--clr-secondary);
+    padding: 1rem 0;
+    color:var(--clr-light);
 }
 header .row.d-flex{
     justify-content: space-between;
+    align-items: center;
 }
 header .fa-bars{
     display: none;
+}
+nav ul.d-flex{
+    justify-content: flex-end;
+    gap:1.3rem;
+}
+nav a{
+    padding:0.7rem;
+    background-color: var(--clr-light);
+    border-radius:3.125rem;
+    color:var(--clr-darker);
 }
 /* #endregion header */
 
@@ -108,18 +126,9 @@ footer{
     background-color: var(--clr-dark);
 }
 /* #endregion footer */
+
+
 /* Responsive */
-
-
-@media screen and (min-width:1200px) {
-    .col-lg-6{
-        width:50%;
-    }
-    .col-lg-4{
-        width:calc((100% / 12) * 4);
-    } 
-    
-}
 
 @media screen and (min-width: 768px){
 
@@ -135,12 +144,11 @@ footer{
     
 }
 
-
-@media screen and (max-width:1119px){
-    header .fa-bars{
-        display: block;
+@media screen and (min-width:1200px) {
+    .col-lg-6{
+        width:50%;
     }
-    header .col-6.right{
-        display: none;
-    }
+    .col-lg-4{
+        width:calc((100% / 12) * 4);
+    } 
 }
