@@ -31,12 +31,16 @@ li{
 section{
     padding: 1rem 0;
 }
+
 /* #endregion common rules */
 
 /* #region utilities */
 .d-flex{
     display: flex;
     flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
 }
 .col-4{
     width:calc((100% / 12) * 4);
@@ -60,6 +64,9 @@ section{
     height:200px;
 }
 
+.debug .cta{
+    height:200px;
+}
 /* #endregion debug */
 
 /* #region header */
@@ -90,9 +97,17 @@ section.benefits{
 
 /* /.section-benefits */
 
+section.cta{
+    background-color: var(--clr-primary);
+}
+/* ./cta */
 /* #endregion main */
 
-
+/* #region footer */
+footer{
+    background-color: var(--clr-dark);
+}
+/* #endregion footer */
 /* Responsive */
 
 
