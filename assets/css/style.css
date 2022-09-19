@@ -1,0 +1,24 @@
+/* #region common rules */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-primary:#9793e5;
+    --clr-secondary:#0084fd;
+    --clr-secondary-light:#b4ddfe;
+    --clr-accent:#fdc15f;
+    --clr-darker: #000;
+    --clr-dark:#323332;
+    --clr-light:#fffefe;
+}
+
+
+/* #endregion common rules */
+
+/* #region utilities */
+
+/* #endregion utilities */
