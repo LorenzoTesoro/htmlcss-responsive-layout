@@ -225,6 +225,7 @@ section.benefits{
 .benefits .row.d-flex{
     row-gap: 1rem;
     gap: 1.5rem;
+    margin-right: -1.5rem;
 }
 .benefits .col-12{
     background-color: var(--clr-light);
@@ -251,6 +252,49 @@ section.benefits{
 
 /* /.section-benefits */
 
+.about-us h2{
+    padding-top: 1.5rem;
+}
+.about-us .row.d-flex{
+    justify-content: space-between;
+}
+.about-us .col-12 p{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 2rem;
+}
+.about-us img{
+    border-radius: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+.about-us h2, .about-us strong{
+    color:var(--clr-primary);
+}
+
+.quote a{
+    display: inline-block;
+    background-color: var(--clr-primary);
+    color:var(--clr-light);
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+}
+.quote i{
+    padding-right: 0.3rem;
+}
+.company-img{
+    position: relative;
+}
+.company-img i{
+    position:absolute;
+    right:0rem;
+    top:0;
+    font-size: 5rem;
+    color: var(--clr-primary);
+}
+/* /.about-us */
+
 section.cta{
     background-color: var(--clr-primary);
 }
@@ -268,8 +312,16 @@ footer{
 
 @media screen and (min-width: 768px){
 
+    .container{
+        max-width: 720px;
+    }
+
     section.demo .d-flex{
         flex-wrap: wrap;
+    }
+    section.about-us .container{
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
     }
     .col-md-6{
         width:calc(50% - 1.5rem);
@@ -290,6 +342,9 @@ footer{
 
 @media screen and (min-width:1200px) {
 
+    .container{
+        max-width: 1140px;
+    }
     header .fa-bars{
         display: none;
     }
