@@ -14,6 +14,7 @@
     --clr-darker: #000;
     --clr-dark:#323332;
     --clr-light:#fffefe;
+    --clr-dark-shade:#A5A5A5;
 }
 
 .container{
@@ -94,7 +95,6 @@ header .row.d-flex{
 
 nav ul.d-flex{
     justify-content: flex-end;
-    gap:1.3rem;
 }
 nav a{
     padding:0.7rem;
@@ -112,7 +112,7 @@ nav a{
 }
 .demo .container{
     row-gap: 1.5rem;
-}
+} 
 .demo .row.d-flex{
     gap:1.5rem;
 }
@@ -215,8 +215,38 @@ section.partners .col-md-10 div:last-child{
 }
 /* ./section-partners */
 
+.benefits-heading{
+    padding-bottom:3rem;
+}
 section.benefits{
     background-color: var(--clr-primary);
+    color:var(--clr-light);
+}
+.benefits .row.d-flex{
+    row-gap: 1rem;
+    gap: 1.5rem;
+}
+.benefits .col-12{
+    background-color: var(--clr-light);
+    color:var(--clr-primary);
+    padding: 1.5rem;
+}
+.benefits .col-12 p{
+    color:var(--clr-dark-shade);
+}
+.card-number{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.card-number, .benefits h4, .benefits p{
+    padding-bottom:1.5rem;
+}
+.benefits a{
+    display: inline-block;
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+    padding:0.5rem 2rem;
+    border-radius: 1rem;
 }
 
 /* /.section-benefits */
@@ -242,7 +272,7 @@ footer{
         flex-wrap: wrap;
     }
     .col-md-6{
-        width:calc(50%);
+        width:calc(50% - 1.5rem);
     }
     .col-md-8{
         width:calc(((100% / 12) * 8) - 1.5rem);
@@ -267,13 +297,13 @@ footer{
         display: block;
     }
 
-    section.plans .d-flex{
+    section.plans .d-flex, {
         flex-wrap: nowrap;
     }
     .col-lg-6{
         width:50%;
     }
     .col-lg-4{
-        width:calc((100% / 12) * 4);
+        width:calc(((100% / 12) * 4 - 1.5rem));
     } 
 }
