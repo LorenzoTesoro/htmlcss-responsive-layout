@@ -4,258 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htmlcss-responsive-layout</title>
+    <title>HtmlCssResponsiveLayout</title>
 
-    <!-- icons -->
+    <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- General style -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header id="site-header">
+    <header id="site_header">
         <nav class="container">
             <div class="row d-flex">
                 <div class="col-6">
-                    <img src="./assets/images/logo.png" alt="site-logo">
+                    <a href=""><img src="./assets/images/logo.png" alt="company logo"></a>
                 </div>
-                <div class="col-6">
+                <div class="col-6 dropdown">
                     <ul>
-                        <li>Planning</li>
-                        <li>Testimonials</li>
-                        <li>Features</li>
-                        <li>About Us</li>
-                        <li><a href="#">Get Started</a></li>
+                        <li><a href="#">Planning</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#" class="btn primary">Get Started</a></li>
                     </ul>
-                    <div class="mobile-nav">
-                        <i class="fa-solid fa-bars"></i> 
-                    </div>   
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- /#site-header -->
-
-    <main id="site-main">
-
-        <section class="demo">
-            <div class="container d-flex">
-                <div class="row d-flex">
-                    <div class="col-12 col-md-8 d-flex bordered-lg">
-                        <div class="col-12 col-lg-8 border-fixed">
-                            <div class="card d-flex">
-                                <div class="card-body">
-                                    <h4>Get a demo application</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.</p>
-                                    <a href="#" class="bordered-lg">
-                                    <i class="fa-brands fa-apple"></i>
-                                    App Store
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4 phone-img border-fixed">
-                            <img src="./assets/images/phone.png" alt="">
-                        </div>                        
-                    </div>
-                    <div class="col-12 col-md-4 text-center bordered-lg">
-                        <i class="fa-solid fa-file-code"></i>
-                        <h4>Clean Code</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.</p>
-                    </div>
-                </div>
-                <div class="row d-flex">
-                    <div class="col-12 col-md-4 text-center bordered-lg">
-                        <i class="fa-solid fa-compass-drafting"></i>
-                        <h4>Web design</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.</p>
-                    </div>
-                    <div class="col-12 col-md-4 text-center bordered-lg">
-                        <i class="fa-solid fa-laptop-code"></i>
-                        <h4>Development</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.</p>
-                    </div>
-                    <div class="col-12 col-md-4 text-center bordered-lg">
-                        <i class="fa-solid fa-bullhorn"></i>
-                        <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /.demo -->
-
-        <section class="plans">
-            <div class="container">
-                <div class="row d-flex">
-                    <div class="col-12 col-lg-6">
-                        <img src="./assets/images/planning1.png" alt="">
-                        <h2>Strategic Planning</h2>
-                        <p>Egestas dui id ornare arcu odio. In tellus integer feugiat scelerisque varius morbi enim nunc. Habitasse platea dictumst quisque sagittis. Interdum velit euismod in pellentesque massa placerat duis. Quis viverra nibh cras pulvinar mattis.</p>
-                    </div>
-                    <div class="col-12 col-lg-6 bordered-lg text-center">
-                        <img src="./assets/images/planning2.png" alt="">
-                        <div class="text-center"><strong>App Development</strong></div>
-                        <p><em>Develop an on-demand app for your delivert business to reach your targeted customers without any interruption</em></p>
-                        <i class="fa-solid fa-arrow-down"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /.plans -->
-
-        <section class="partners">
-            <div class="container d-flex">
-                <div class="partners-heading text-center">
-                    <div>Testimonials</div>
-                    <h2>We are committed expert partners</h2>
-                    <p>We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.</p>
-                </div>
-                <div class="row d-flex bordered-lg">
-                    <div class="col-12 col-md-2">
-                        <img src="./assets/images/testimonial1.jpg" alt="" class="circle-img">
-                    </div>
-                    <div class="col-12 col-md-10">
-                        <blockquote>
-                            <i class="fa-solid fa-quote-left"></i>
-                            Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin.
-                            <i class="fa-solid fa-quote-right"></i>
-                        </blockquote>
-                        <div>Nat Reynolds</div>
-                    </div>
-                </div>
-                <div class="row d-flex bordered-lg">
-                    <div class="col-12 col-md-2">
-                        <img src="./assets/images/testimonial2.jpg" alt="" class="circle-img">
-                    </div>
-                    <div class="col-12 col-md-10">
-                        <blockquote>
-                            <i class="fa-solid fa-quote-left"></i>
-                            Pharetra vel turpis nunc eget lorem. Quisque id diam vel quam elementum pulvinar etiam. Urna porttitor rhoncu dolor purus non enim praesent elementum.
-                            <i class="fa-solid fa-quote-right"></i>
-                        </blockquote>
-                        <div>Celia Almeda</div>
-                    </div>
-                </div>
-                <div class="row d-flex bordered-lg">
-                    <div class="col-12 col-md-2">
-                        <img src="./assets/images/testimonial3.jpg" alt="" class="circle-img">
-                    </div>
-                    <div class="col-12 col-md-10">
-                        <blockquote>
-                            <i class="fa-solid fa-quote-left"></i>
-                            Mauris auque neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin. Nibh nisl condimentum id venenatis a condimentum.
-                            <i class="fa-solid fa-quote-right"></i>
-                        </blockquote>
-                        <div>Bob Roberts</div>
-                    </div>
-                </div>  
-            </div>
-        </section>
-        <!-- /.partners -->
-
-        <section class="benefits">
-            <div class="container">
-                <div class="benefits-heading text-center">
-                    <h2>Benefits of working with us</h2>                    
-                </div>
-                <div class="row d-flex">
-                    <div class="col-12 col-md-6 col-lg-4 bordered-sm">
-                        <div class="card-number">01</div>
-                        <h4>High Quality</h4>
-                        <p>Vitae suscipit tellus mauris a diam maecenas de enim ut. Mauris quque neque gravida in fermentum. Praesent sempre feugiat nibh sed pulvinar proin id venenatis.</p>
-                        <a href="#">more</a>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 bordered-sm">
-                        <div class="card-number">02</div>
-                        <h4>Creative Team</h4>
-                        <p>Vitae suscipit tellus mauris a diam maecenas de enim ut. Mauris quque neque gravida in fermentum. Praesent sempre feugiat nibh sed pulvinar proin id venenatis.</p>
-                        <a href="#">more</a>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 bordered-sm">
-                        <div class="card-number">03</div>
-                        <h4>Amazing Results</h4>
-                        <p>Vitae suscipit tellus mauris a diam maecenas de enim ut. Mauris quque neque gravida in fermentum. Praesent sempre feugiat nibh sed pulvinar proin id venenatis.</p>
-                        <a href="#">more</a>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 bordered-sm">
-                        <div class="card-number">04</div>
-                        <h4>Best Pricing</h4>
-                        <p>Vitae suscipit tellus mauris a diam maecenas de enim ut. Mauris quque neque gravida in fermentum. Praesent sempre feugiat nibh sed pulvinar proin id venenatis.</p>
-                        <a href="#">more</a>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 bordered-sm">
-                        <div class="card-number">05</div>
-                        <h4>Innovations</h4>
-                        <p>Vitae suscipit tellus mauris a diam maecenas de enim ut. Mauris quque neque gravida in fermentum. Praesent sempre feugiat nibh sed pulvinar proin id venenatis.</p>
-                        <a href="#">more</a>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 bordered-sm">
-                        <div class="card-number">06</div>
-                        <h4>24/7 Support</h4>
-                        <p>Vitae suscipit tellus mauris a diam maecenas de enim ut. Mauris quque neque gravida in fermentum. Praesent sempre feugiat nibh sed pulvinar proin id venenatis.</p>
-                        <a href="#">more</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /.benefits -->
-
-        <section class="about-us">
-            <div class="container">
-                <div class="row d-flex">
-                    <div class="col-12 col-md-8">
-                        <h2>About Us</h2>
-                        <p>Sample text. Click to Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium voluptate. Pharetramagna ac placerat vestibulum. QUam lacus suspendisse faucibus interdum posuere lorem. Egestas tellus rutrum tellus pellentesque eu tincidunt. Neque vitae tempus quam pellentesque nec. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Intedum velit euismod in pellentesque massa placerat duis.</p>
-                        <p>Quis viverra nibh cras pulvinar mattis. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Dignissim diam quis enim lobortis scelerisque. Tellus molestie nunc non blandit massa enim. the text box. Click again or double click to start editing the text.</p>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="company-img">
-                            <img src="./assets/images/about.jpg" alt="employee looking at user">
-                            <i class="fa-solid fa-quote-left"></i>
-                        </div>
-                        <div class="quote">
-                            <p><strong>I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio.</strong></p>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i>Find me on linkedin</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /.about-us -->
-
-        <section class="cta">
-            <div class="container text-center">
-                <div>GET STARTED</div>
-                <h2>Simple, Transparent Pricing</h2>
-                <div class="banner">It's Free!</div>
-                <p>We're still in beta and we will be for awhile. As we add more functionality, we'll look into other plans with more controls.
-                </p>
-                <div class="start">
-                    <a href="#">Get Started</a>
-                </div>
-                <div class="privacy">
-                    Copyright 2021 Boolean 
-                    <span>&#8226;</span>
-                        Classe XX 
-                    <span>&#8226;</span>
-                    <a href="#">Privacy policy</a>
-                </div>  
-            </div>
-        </section>
-        <!-- /.cta -->
-    </main>
-    <!-- /#site-main -->
-    <footer id="site-foooter">
-        <div class="container text-center">
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolore, corrupti quo quos molestiae est at neque impedit magnam, repellendus, voluptate cum totam cupiditate inventore officia. Aliquam quisquam eos molestias.</div>
-        </div>
-    </footer>
-    <!-- /#site-foooter -->
+    <!-- /#site_header -->
+    <main id="site_main"></main>
+    <!-- /#site_main -->
+    <footer id="site_footer"></footer>
+    <!-- /#site_footer -->
 </body>
 </html>
