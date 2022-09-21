@@ -36,9 +36,9 @@ section{
 
 img{
     max-width: 100%;
-    display: block;
     aspect-ratio: 1/1;
     object-fit: contain;
+    display: block;
 }
 .circle-img{
     object-fit: cover;
@@ -67,6 +67,7 @@ h2{
 /* #region utilities */
 .d-flex{
     display: flex;
+    flex-wrap: wrap;
 }
 .text-center{
     text-align: center;
@@ -75,8 +76,20 @@ h2{
     padding:0.7rem;
     border-radius:3.125rem;
 }
+.bordered-sm{
+    border-radius:1.25rem;
+}
+.col-4{
+    width:calc((100% / 12) * 4);
+}
 .col-6{
     width:50%;
+}
+.col-8{
+    width:calc((100% / 12) * 8);
+}
+.col-12{
+    width:100%;
 }
 /* #endregion utilities */
 
@@ -103,12 +116,78 @@ nav .dropdown{
 }
 /* #endregion header */
 
+/* #region main */
+
+.demo .card{
+    background-color: var(--clr-secondary-light);
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    height:100%;
+}
+
+.demo h4, .demo i{
+    color:var(--clr-secondary);
+}
+.demo h4{
+    padding-top: 1rem;
+}
+.demo p{
+    padding:1rem 0 1.5rem 0;
+    color:var(--clr-dark);
+    line-height: 1.5;
+    text-align:justify; 
+}
+.demo .col-md-4 i{
+    font-size: 3rem;
+}
+.demo .col-md-8 h4{
+    padding-top:0;
+}
+.demo div > a{
+    display: inline-block;
+    padding-top:1.5rem;
+    background-color: var(--clr-secondary);
+    color:var(--clr-light);
+    padding: 0.5rem 3rem;
+    letter-spacing: 0.1rem;
+}
+.demo a > i{
+    color:var(--clr-light);
+}
+.demo .col-12{
+    padding-top:1rem;
+}
+.fa-apple{
+    padding-right:0.5rem;
+}
+#phone-img{
+    margin-bottom: -1rem;
+}
+
+/* /.section demo */
+/* #endregion main */
 
 
 /* Responsive */
 
 
 @media screen and (min-width:768px) {
+
+    section.demo .d-flex{
+        flex-wrap: nowrap;
+    }
+    .demo .card.d-flex:first-of-type{
+        flex-wrap: wrap;
+    }
+    .demo .col-12:first-child, .demo .container .row.d-flex:nth-child(2) > .col-12:nth-child(2){
+        padding-right:1rem;
+    }
+
+    .col-md-4{
+        width:calc((100% / 12) * 4);
+    }
+    .col-md-8{
+        width:calc((100% / 12) * 8);
+    }
     .container{
         max-width: 720px;
     }
@@ -116,6 +195,18 @@ nav .dropdown{
 
 @media screen and (min-width:1200px) {
 
+    .demo .card.d-flex:first-of-type{
+        flex-wrap: nowrap;
+    }
+    .col-lg-4{
+        width:50%;
+    }
+    .col-lg-6{
+        width:calc((100% / 12) * 6);
+    }
+    .col-lg-8{
+        width:calc((100% / 12) * 8);
+    }
     .container{
         max-width: 1140px;
     }
