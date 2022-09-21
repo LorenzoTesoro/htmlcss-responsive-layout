@@ -59,7 +59,9 @@ h4, .quote strong{
 h2{
     font-size: 1.875rem;
 }
-
+p{
+    line-height: 1.5;
+}
 /* #endregion common rules */
 
 /* #region common rules */
@@ -133,7 +135,6 @@ nav .dropdown{
 .demo p{
     padding:1rem 0 1.5rem 0;
     color:var(--clr-dark);
-    line-height: 1.5;
     text-align:justify; 
 }
 .demo .col-md-4 i{
@@ -164,6 +165,41 @@ nav .dropdown{
 }
 
 /* /.section demo */
+
+section.plans{
+    background-color: var(--clr-primary);
+    color:var(--clr-light);
+}
+
+section.plans h2{
+    padding-top:8rem;
+    padding-bottom: 3rem;
+}
+/* section.plans .container{
+    padding:2rem 5rem;
+} */
+.plans .col-12:last-of-type{
+    background-color: var(--clr-light);
+    align-self: flex-end;
+    color:var(--clr-darker);
+    padding:2rem;
+}
+.plans div.text-center{
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+
+.plans i{
+    padding:1rem;
+    background-color: var(--clr-primary);
+    border-radius: 100%;
+    margin-top: 1rem;
+ }
+ .plans p:last-of-type{
+    padding-bottom:1rem;
+    padding-top: 1rem;
+ }
+/* /.section plans */
 /* #endregion main */
 
 
@@ -223,6 +259,12 @@ nav .dropdown{
     header .btn.primary{
         background-color: var(--clr-light);
         color:var(--clr-darker);
+    }
+    section.plans .container{
+    padding:2rem 5rem;
+    }
+    .section.plans .col-12:first-of-type{
+        padding-right: 3rem;
     }
     
 }
