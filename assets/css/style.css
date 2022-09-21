@@ -14,7 +14,7 @@
     --clr-dark:#474847;
     --clr-white:#fffefe;
     --clr-light:#FBFBFD;
-    --clr-transparent:#C1BFEF;
+    --clr-transparent:#E2E0F7;
 }
 
 body{
@@ -59,7 +59,7 @@ h4, .quote strong{
 h2{
     font-size: 1.875rem;
 }
-p{
+p, blockquote{
     line-height: 1.5;
 }
 /* #endregion common rules */
@@ -80,6 +80,9 @@ p{
 }
 .bordered-sm{
     border-radius:1.25rem;
+}
+.bordered-lg{
+    border-radius: 2rem;
 }
 .col-4{
     width:calc((100% / 12) * 4);
@@ -175,9 +178,7 @@ section.plans h2{
     padding-top:8rem;
     padding-bottom: 3rem;
 }
-/* section.plans .container{
-    padding:2rem 5rem;
-} */
+
 .plans .col-12:last-of-type{
     background-color: var(--clr-light);
     align-self: flex-end;
@@ -200,6 +201,44 @@ section.plans h2{
     padding-top: 1rem;
  }
 /* /.section plans */
+
+.partners-heading h2{
+    color:var(--clr-primary);
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+}
+.partners-heading h2+p{
+    padding-bottom: 1.5rem;
+}
+
+section.partners .row.d-flex{
+    background-color: var(--clr-primary);
+    color:var(--clr-light);
+    padding:1rem;
+    align-items: center;
+}
+
+section.partners img{
+    border-radius: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+section.partners .container{
+    row-gap: 1.5rem;
+    justify-content: center;
+}
+section.partners .col-md-10{
+    padding-left: 2rem;
+}
+section.partners .col-md-10 div:last-child{
+    padding-top: 1rem;
+}
+section.partners blockquote{
+    padding-top:1rem;
+    color:var(--clr-transparent);
+}
+/* /. partners */
 /* #endregion main */
 
 
@@ -217,12 +256,20 @@ section.plans h2{
     .demo .col-12:first-child, .demo .container .row.d-flex:nth-child(2) > .col-12:nth-child(2){
         padding-right:1rem;
     }
-
+    section.partners blockquote{
+        padding-top:0;
+    }
+    .col-md-2{
+        width:calc((100% / 12) * 2);
+    }
     .col-md-4{
         width:calc((100% / 12) * 4);
     }
     .col-md-8{
         width:calc((100% / 12) * 8);
+    }
+    .col-md-10{
+        width:calc((100% / 12) * 10);
     }
     .container{
         max-width: 720px;
