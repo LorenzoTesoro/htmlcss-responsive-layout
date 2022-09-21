@@ -239,6 +239,44 @@ section.partners blockquote{
     color:var(--clr-transparent);
 }
 /* /. partners */
+
+.benefits-heading{
+    padding-bottom:3rem;
+}
+section.benefits{
+    background-color: var(--clr-primary);
+    color:var(--clr-light);
+}
+.benefits .row.d-flex{
+    row-gap: 1.5rem;
+}
+.benefits .card{
+    background-color: var(--clr-light);
+    color:var(--clr-primary);
+    padding: 1.5rem;
+}
+.benefits .col-12 p{
+    color:var(--clr-dark-shade);
+}
+.card-number{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.card-number, .benefits h4, .benefits p{
+    padding-bottom:1.5rem;
+}
+.benefits a{
+    display: inline-block;
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+    padding:0.5rem 2rem;
+    border-radius: 1rem;
+}
+.benefits .card{
+    height:100%;
+}
+/* /.section-benefits */
+
 /* #endregion main */
 
 
@@ -250,7 +288,7 @@ section.partners blockquote{
     section.demo .d-flex{
         flex-wrap: nowrap;
     }
-    .demo .card.d-flex:first-of-type{
+    .demo .card.d-flex:first-of-type, section.benefits{
         flex-wrap: wrap;
     }
     .demo .col-12:first-child, .demo .container .row.d-flex:nth-child(2) > .col-12:nth-child(2){
@@ -259,11 +297,20 @@ section.partners blockquote{
     section.partners blockquote{
         padding-top:0;
     }
+    section.benefits .col-12:first-child,
+    section.benefits .col-12:nth-child(3),
+    section.benefits .col-12:nth-child(5){
+        padding-right: 1.5rem;
+    }
+    
     .col-md-2{
         width:calc((100% / 12) * 2);
     }
     .col-md-4{
         width:calc((100% / 12) * 4);
+    }
+    .col-md-6{
+        width:50%;
     }
     .col-md-8{
         width:calc((100% / 12) * 8);
@@ -281,8 +328,15 @@ section.partners blockquote{
     .demo .card.d-flex:first-of-type{
         flex-wrap: nowrap;
     }
+    section.benefits .col-12:nth-child(2),
+    section.benefits .col-12:nth-child(4){
+        padding-right: 1.5rem;
+    }
+    section.benefits .col-12:nth-child(3){
+        padding-right: 0;
+    }
     .col-lg-4{
-        width:50%;
+        width:calc((100% / 12) * 4);
     }
     .col-lg-6{
         width:calc((100% / 12) * 6);
