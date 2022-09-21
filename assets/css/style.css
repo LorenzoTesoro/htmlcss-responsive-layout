@@ -358,14 +358,29 @@ section.cta{
     text-decoration: underline;
     color:var(--clr-light);
 }
-
-
-
-
 /* /. section cta*/
 
 /* #endregion main */
 
+/* #region footer */
+footer{
+    background-color: var(--clr-darker);
+    color:var(--clr-light);
+    padding-top: 2rem;
+}
+
+footer a{
+    color:var(--clr-primary);
+}
+footer .container-sm{
+    width:60%;
+    margin:0 auto;
+    padding-bottom:3rem;
+}
+footer .container:first-child{
+    padding-bottom:3rem;
+}
+/* #endregion footer */
 
 /* Responsive */
 
