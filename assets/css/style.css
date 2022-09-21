@@ -297,7 +297,6 @@ section.benefits{
 .about-us h2, .about-us strong{
     color:var(--clr-primary);
 }
-
 .quote a{
     display: inline-block;
     background-color: var(--clr-primary);
@@ -318,7 +317,52 @@ section.benefits{
     font-size: 5rem;
     color: var(--clr-primary);
 }
-/* /.about-us */
+/* /.section about-us */
+
+section.cta{
+    background-color: var(--clr-primary);
+}
+.cta .container > div:first-child{
+    color:var(--clr-transparent);
+}
+.cta h2{
+    padding:1rem;
+    color:var(--clr-white)
+}
+.banner{
+    color:var(--clr-accent);
+    font-size: 3.75rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+.banner + div > p{
+    color:var(--clr-light);
+}
+.start{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+.start a{
+    background-color: var(--clr-white);
+    padding:1em 3rem;
+    display: inline-block;
+    border-radius: 2rem;
+    color:var(--clr-primary);
+}
+
+.privacy{
+    color:var(--clr-light);
+}
+.privacy a{
+    display: inline-block;
+    text-decoration: underline;
+    color:var(--clr-light);
+}
+
+
+
+
+/* /. section cta*/
 
 /* #endregion main */
 
@@ -351,6 +395,10 @@ section.benefits{
     }
     section.about-us .col-md-8{
         padding-right:4rem;
+    }
+    .banner + div{
+        margin:0 auto;
+        width:80%;
     }
     .col-md-2{
         width:calc((100% / 12) * 2);
