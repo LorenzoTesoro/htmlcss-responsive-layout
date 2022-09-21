@@ -277,6 +277,49 @@ section.benefits{
 }
 /* /.section-benefits */
 
+.about-us h2{
+    padding-top: 1.5rem;
+}
+.about-us .row.d-flex{
+    justify-content: space-between;
+}
+.about-us .col-12 p{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 2rem;
+}
+.about-us img{
+    border-radius: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+.about-us h2, .about-us strong{
+    color:var(--clr-primary);
+}
+
+.quote a{
+    display: inline-block;
+    background-color: var(--clr-primary);
+    color:var(--clr-light);
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+}
+.quote i{
+    padding-right: 0.3rem;
+}
+.company-img{
+    position: relative;
+}
+.company-img i{
+    position:absolute;
+    right:0rem;
+    top:0;
+    font-size: 5rem;
+    color: var(--clr-primary);
+}
+/* /.about-us */
+
 /* #endregion main */
 
 
@@ -302,7 +345,13 @@ section.benefits{
     section.benefits .col-12:nth-child(5){
         padding-right: 1.5rem;
     }
-    
+    section.about-us .container{
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+    section.about-us .col-md-8{
+        padding-right:4rem;
+    }
     .col-md-2{
         width:calc((100% / 12) * 2);
     }
